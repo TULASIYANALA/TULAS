@@ -1,0 +1,25 @@
+<html>
+<style>
+body{
+background-image:url('https://wallpapercave.com/wp/wp2561091.jpg');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:100% 100%;
+}
+</style>
+<h1 style="text-align:center";>Format a number up to specified decimal places.</h1>
+<p>The values are</p>
+<script>
+function decimals(n,d){
+if((typeof n!=='number') ||(typeof d!=='number'))
+return false;
+n=parseFloat(n) || 0;
+return n.toFixed(d);
+}
+document.write(decimals(2.100212,2)+"<br>");
+document.write(decimals(2.100212,3)+"<br>");
+document.write(decimals(2100,2)+"<br>");
+</script>
+</body>
+</html>
+

@@ -1,0 +1,22 @@
+<html>
+<style>
+body{
+background-image:url('https://wallpapercave.com/wp/wp2561091.jpg');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:100% 100%;
+}
+</style>
+<h1 style="text-align:center";>Sorting the Array Numbers</h1>
+<p>ORIGINAL ARRAY</p>
+<p id="demo"></p>
+<p>AFTER SORTING</p>
+<p id="demo1"></p>
+<script>
+var arr=[-3,8,7,6,5,-4,3,2,1];
+document.getElementById("demo").innerHTML=arr;
+arr.sort(function(a,b){return a-b});
+document.getElementById("demo1").innerHTML=arr;
+</script>
+</body>
+</html>

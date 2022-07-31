@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>ERROR HANDLING</title>
+</head>
+<style>
+body{
+background-image:url('https://wallpapercave.com/wp/wp2561091.jpg');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:100% 100%;
+}
+</style>
+<h1 style="text-align:center";>REVERSING STRING</h1>
+<p>After appling  different operations we get </p>
+<p id="demo"></p>
+<script>
+try{
+var a=myFunction("Talentio");
+document.getElementById("demo").innerHTML=a;
+function myFunction(str)
+{
+return str.split("").reverse().join("");
+}
+}
+catch(error)
+{
+document.getElementById("demo").innerHTML=error.message
+}
+</script>
+</body>
+</html>
